@@ -14,6 +14,10 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Container(
+            height: 100.0,
+            width: 100.0,
+            margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(10.0),
             color: Colors.white, // childがない場合画面全体が白くなる
             child: Text('hello'), // childがある場合その子のサイズに合わせてできるだけ小さいサイズになる
           ),
