@@ -13,13 +13,37 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(10.0),
-            color: Colors.white, // childがない場合画面全体が白くなる
-            child: Text('hello'), // childがある場合その子のサイズに合わせてできるだけ小さいサイズになる
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch, // 画面いっぱいにのばすやつ
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    height: 50.0,
+                    child: Text("Container1"),
+                    color: Colors.amber,
+                  ),
+                  Container(
+                    height: 20.0,
+                    child: Text("Container1"),
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Container(
+                height: 100,
+                color: Colors.blue,
+                child: Text('Container 2'),
+              ),
+              Container(
+                height: 100,
+                color: Colors.red,
+                child: Text('Container 3'),
+              ),
+            ],
           ),
         ),
       ),
