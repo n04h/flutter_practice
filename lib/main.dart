@@ -19,6 +19,25 @@ class MyApp extends StatelessWidget {
               radius: 50,
               backgroundImage: AssetImage('images/icon.jpg'),
             ),
+            Text(
+              'N04h',
+              style: TextStyle(
+                fontSize: 40,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Pacifico',
+              ),
+            ),
+            Text(
+              'WEB & APP DEVELOPER',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                fontFamily: 'SourceSansPro',
+                letterSpacing: 2.5, // 文字の間隔
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         )),
       ),
