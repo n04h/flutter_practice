@@ -38,6 +38,16 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Container(
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.add_shopping_cart,
+                    size: 100,
+                  ),
+                ],
+              ),
+            )
           ],
         )),
       ),
