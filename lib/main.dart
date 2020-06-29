@@ -12,9 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(
-          color: Colors.white, // childがない場合画面全体が白くなる
-          child: Text('hello'), // childがある場合その子のサイズに合わせてできるだけ小さいサイズになる
+        body: SafeArea(
+          child: Container(
+            color: Colors.white, // childがない場合画面全体が白くなる
+            child: Text('hello'), // childがある場合その子のサイズに合わせてできるだけ小さいサイズになる
+          ),
         ),
       ),
     );
