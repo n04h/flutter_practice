@@ -41,48 +41,36 @@ class MyApp extends StatelessWidget {
             Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      '+81 090 1234 5678',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
-                      ),
-                    )
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+81 090 1234 5678',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
             Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      'contact@n04h.jp',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20,
-                      ),
-                    )
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'contact@n04h.jp',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20,
+                  ),
                 ),
               ),
             )
