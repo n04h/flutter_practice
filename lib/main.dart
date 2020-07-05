@@ -9,14 +9,58 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: FlatButton(
-              onPressed: () {
-                final player = AudioCache();
-                player.play('note1.wav');
-              },
-              child: Text('Click me!'),
-            ),
+          child: Column(
+            children: <Widget>[
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note1.wav');
+                },
+                color: Colors.red,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note2.wav');
+                },
+                color: Colors.orange,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note3.wav');
+                },
+                color: Colors.yellow,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note4.wav');
+                },
+                color: Colors.green,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note5.wav');
+                },
+                color: Colors.teal,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note6.wav');
+                },
+                color: Colors.blue,
+              ),
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note7.wav');
+                },
+                color: Colors.purple,
+              ),
+            ],
           ),
         ),
       ),
