@@ -4,10 +4,10 @@ class QuizBrain {
   int _questionNumber = 0;
 
   List<Question> _questionBank = [
-    Question(q: "EMT?", a: true),
-    Question(q: "エミリアたんマジ天使?", a: true),
-    Question(q: "エミリアたん超可愛い?", a: true),
-    Question(q: "ペテルギウス可愛い?", a: false),
+    Question("EMT?", true),
+    Question("エミリアたんマジ天使?", true),
+    Question("エミリアたん超可愛い?", true),
+    Question("ペテルギウス可愛い?", false),
   ];
 
   void nextQuestion() {
