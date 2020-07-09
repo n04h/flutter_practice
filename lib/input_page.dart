@@ -55,7 +55,9 @@ class _InputPageState extends State<InputPage> {
 class ReusableCard extends StatelessWidget {
   ReusableCard({@required this.cardColor});
 
-  Color cardColor;
+  // const も不変にできるが、コンパイル時に値が計算されたものに固定されるため、
+  // 今回のような場合はfinalを使う必要がある
+  final Color cardColor;
 
   @override
   Widget build(BuildContext context) {
