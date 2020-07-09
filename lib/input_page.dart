@@ -9,46 +9,53 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('BMI CALCULATOR'),
-        ),
-        body: Column(
-          children: <Widget>[
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: ReusableCard(
-                      cardColor: Color(0xFF1D1E33),
-                    ),
+      appBar: AppBar(
+        title: Text('BMI CALCULATOR'),
+      ),
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: ReusableCard(
+                    cardColor: Color(0xFF1D1E33),
                   ),
-                  Expanded(
-                      child: ReusableCard(
-                    cardColor: Color(0xFF1D1E33),
-                  )),
-                ],
-              ),
+                ),
+                Expanded(
+                    child: ReusableCard(
+                  cardColor: Color(0xFF1D1E33),
+                )),
+              ],
             ),
-            Expanded(
-                child: ReusableCard(
-              cardColor: Color(0xFF1D1E33),
-            )),
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                      child: ReusableCard(
-                    cardColor: Color(0xFF1D1E33),
-                  )),
-                  Expanded(
-                      child: ReusableCard(
-                    cardColor: Color(0xFF1D1E33),
-                  )),
-                ],
-              ),
+          ),
+          Expanded(
+              child: ReusableCard(
+            cardColor: Color(0xFF1D1E33),
+          )),
+          Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                    child: ReusableCard(
+                  cardColor: Color(0xFF1D1E33),
+                )),
+                Expanded(
+                    child: ReusableCard(
+                  cardColor: Color(0xFF1D1E33),
+                )),
+              ],
             ),
-          ],
-        ));
+          ),
+          Container(
+            color: Color(0xFFEB1555),
+            margin: EdgeInsets.only(top: 10.0),
+            width: double.infinity,
+            height: 80.0,
+          )
+        ],
+      ),
+    );
   }
 }
 
