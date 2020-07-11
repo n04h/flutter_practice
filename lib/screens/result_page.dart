@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/reusable_card.dart';
 import '../constants.dart';
+import '../components/bottom_button.dart';
 
 class ResultPage extends StatelessWidget {
   @override
@@ -50,18 +51,12 @@ class ResultPage extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            color: kBottomContainerColor,
-            margin: EdgeInsets.only(top: 10.0),
-            padding: EdgeInsets.only(bottom: 20.0),
-            width: double.infinity,
-            height: kBottomContainerHeight,
-            child: Center(
-                child: Text(
-              'RE-CALCULATE',
-              style: kLargeButtonTextStyle,
-            )),
-          )
+          BottomButton(
+            buttonTitle: 'RE-CALCULATE',
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ],
       ),
     );
