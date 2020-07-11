@@ -15,9 +15,13 @@ class ResultPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
-            child: Text(
-              'Your Result',
-              style: kTitleTextStyle,
+            child: Container(
+              padding: EdgeInsets.all(15),
+              alignment: FractionalOffset.bottomLeft,
+              child: Text(
+                'Your Result',
+                style: kTitleTextStyle,
+              ),
             ),
           ),
           Expanded(
@@ -29,9 +33,11 @@ class ResultPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
-                    child: Text(
-                      'OVERWEIGHT',
-                      style: kResultTextStyle,
+                    child: Center(
+                      child: Text(
+                        'OVERWEIGHT',
+                        style: kResultTextStyle,
+                      ),
                     ),
                   ),
                   Expanded(
