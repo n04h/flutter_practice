@@ -13,6 +13,19 @@ class AddTaskScreen extends StatelessWidget {
             topRight: Radius.circular(20),
           ),
         ),
+        child: Column(
+          children: <Widget>[
+            Text(
+              'Add task',
+              style: TextStyle(
+                color: Colors.lightBlueAccent,
+                fontSize: 30,
+              ),
+            ),
+            TextField(),
+            FlatButton(),
+          ],
+        ),
       ),
     );
   }
