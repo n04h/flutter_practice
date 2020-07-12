@@ -10,7 +10,17 @@ class TasksScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-              context: context, builder: (context) => AddTaskScreen());
+            context: context,
+            isScrollControlled: true, // モーダルを全画面表示できる
+            builder: (context) => SingleChildScrollView(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context)
+                    .viewInsets
+                    .bottom, // ボタンよりしたにキーボードがでるようにサイズを合わせる
+              ),
+              child: AddTaskScreen(),
+            ),
+          );
         },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
