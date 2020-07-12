@@ -20,12 +20,7 @@ class TasksScreen extends StatelessWidget {
                     .viewInsets
                     .bottom, // ボタンよりしたにキーボードがでるようにサイズを合わせる
               ),
-              child: AddTaskScreen((newTaskTitle) {
-//                setState(() {
-//                  tasks.add(Task(name: newTaskTitle));
-//                });
-                Navigator.pop(context);
-              }),
+              child: AddTaskScreen(),
             ),
           );
         },
