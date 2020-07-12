@@ -30,7 +30,11 @@ class _TasksScreenState extends State<TasksScreen> {
                     .viewInsets
                     .bottom, // ボタンよりしたにキーボードがでるようにサイズを合わせる
               ),
-              child: AddTaskScreen(),
+              child: AddTaskScreen((newTaskTitle) {
+                setState(() {
+                  tasks.add(Task(name: newTaskTitle));
+                });
+              }),
             ),
           );
         },
@@ -71,7 +75,7 @@ class _TasksScreenState extends State<TasksScreen> {
                   ),
                 ),
                 Text(
-                  '12 items',
+                  '${tasks.length} items',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
